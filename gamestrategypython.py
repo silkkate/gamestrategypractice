@@ -9,8 +9,8 @@ def get_game_strat(x):
         max_tokens=1000,
         api_key=api_key
     )
-    strategy = response.choices[0].text
-    return strategy
+    strat = response.choices[0].text
+    return strat
 
 def main():
     game_name = input("What game would you like to beat? ").casefold()
